@@ -32,14 +32,5 @@ setuptools.setup(
         "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
         "Topic :: Multimedia :: Graphics",
         "Operating System :: OS Independent"
-    ),
-    entry_points={
-        'gui_scripts': [
-            'psgissue=PySimpleGUI.PySimpleGUI:main_open_github_issue',
-            'psgmain=PySimpleGUI.PySimpleGUI:_main_entry_point',
-            'psgupgrade=PySimpleGUI.PySimpleGUI:_upgrade_entry_point',
-            'psghelp=PySimpleGUI.PySimpleGUI:main_sdk_help',
-            'psgver=PySimpleGUI.PySimpleGUI:main_get_debug_data',
-            'psgsettings=PySimpleGUI.PySimpleGUI:main_global_pysimplegui_settings',
-        ],},
+    )
 )
