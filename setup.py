@@ -4,7 +4,7 @@ def readme():
     try:
         with open('README.md') as f:
             return f.read()
-    except IOError:
+    except (IOError, UnicodeDecodeError):
         return ''
 
 
@@ -17,7 +17,7 @@ setuptools.setup(
     long_description=readme(),
     long_description_content_type="text/markdown",
     keywords="GUI UI tkinter Qt WxPython Remi wrapper simple easy beginner novice student graphics progressbar progressmeter",
-    url="https://github.com/PySimpleGUI/PySimpleGUI",
+    url="https://github.com/andor-pierdelacabeza/PySimpleGUI-4-foss",
     packages=setuptools.find_packages(),
     classifiers=(
         "Programming Language :: Python :: 3",
